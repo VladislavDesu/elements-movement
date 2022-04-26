@@ -144,7 +144,7 @@ const main = boxSize => {
     return elementsArray;
 };
 
-const generateElements = (elementsAttribute) => {
+const generateElements = (elementsAttribute, box) => {
     elementsAttribute.forEach((attribute, index) => {
         const count = index + 1;
         const counter = count < 10 ? "0" + count: count;
@@ -193,7 +193,7 @@ try {
         });
     }
 
-    generateElements(elementsAttribute);
+    generateElements(elementsAttribute, box);
 
     const elementsArray = main(boxSize);
 
